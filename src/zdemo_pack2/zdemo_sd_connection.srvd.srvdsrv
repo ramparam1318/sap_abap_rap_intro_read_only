@@ -1,0 +1,6 @@
+@EndUserText.label: 'service definition connection'
+define service Zdemo_sd_connection {
+  expose ZDEMO_CONNECTION;
+  expose zdemo_flight;
+  expose zdemo_carrier;
+}

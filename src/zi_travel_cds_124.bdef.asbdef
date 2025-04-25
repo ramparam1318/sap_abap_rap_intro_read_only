@@ -41,6 +41,7 @@ persistent table zbooking_m_124
 lock dependent by _travel
 authorization dependent by _travel
 etag master LastChangedAt
+early numbering
 {
   update;
   delete;
@@ -70,6 +71,7 @@ persistent table zbook_sup_m_124
 lock dependent by _travel
 authorization dependent by _travel
 etag master LastChangedAt
+early numbering
 {
   update;
   delete;

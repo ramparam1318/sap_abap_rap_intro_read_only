@@ -89,6 +89,8 @@ CLASS lhc_zi_travel_cds_124 IMPLEMENTATION.
                                  NEXT  lv_max = COND  /dmo/booking_id( WHEN lv_max < ls_link-target-BookingId
                                                                        THEN ls_link-target-BookingId
                                                                         ELSE lv_max ) ).
+
+      "useful for draft scenario
       lv_max_booking  = REDUCE #( INIT lv_max = lv_max_booking
                                    FOR ls_entity IN entities USING KEY entity
                                        WHERE ( TravelId = <ls_group_entity>-TravelId  )

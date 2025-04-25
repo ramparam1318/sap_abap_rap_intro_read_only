@@ -9,6 +9,10 @@ authorization master ( instance )
 etag master LastChangedAt
 early numbering
 {
+  action accept_travel result [1] $self;
+  action reject_travel result [1] $self;
+  factory action copy_travel [1];
+  internal action recal_total_price;
   create;
   update;
   delete;

@@ -3,6 +3,17 @@ CLASS lhc_zi_travel_cds_124 DEFINITION INHERITING FROM cl_abap_behavior_handler.
 
     METHODS get_instance_authorizations FOR INSTANCE AUTHORIZATION
       IMPORTING keys REQUEST requested_authorizations FOR zi_travel_cds_124 RESULT result.
+    METHODS accept_travel FOR MODIFY
+      IMPORTING keys FOR ACTION zi_travel_cds_124~accept_travel RESULT result.
+
+    METHODS copy_travel FOR MODIFY
+      IMPORTING keys FOR ACTION zi_travel_cds_124~copy_travel.
+
+    METHODS recal_total_price FOR MODIFY
+      IMPORTING keys FOR ACTION zi_travel_cds_124~recal_total_price.
+
+    METHODS reject_travel FOR MODIFY
+      IMPORTING keys FOR ACTION zi_travel_cds_124~reject_travel RESULT result.
     METHODS earlynumbering_cba_booking FOR NUMBERING
       IMPORTING entities FOR CREATE zi_travel_cds_124\_booking.
     METHODS earlynumbering_create FOR NUMBERING
@@ -122,6 +133,18 @@ CLASS lhc_zi_travel_cds_124 IMPLEMENTATION.
 
     ENDLOOP.
 
+  ENDMETHOD.
+
+  METHOD accept_travel.
+  ENDMETHOD.
+
+  METHOD copy_travel.
+  ENDMETHOD.
+
+  METHOD recal_total_price.
+  ENDMETHOD.
+
+  METHOD reject_travel.
   ENDMETHOD.
 
 ENDCLASS.

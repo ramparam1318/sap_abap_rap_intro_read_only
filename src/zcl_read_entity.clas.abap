@@ -119,7 +119,7 @@ CLASS zcl_read_entity IMPLEMENTATION.
     OPERATIONS it_oper_tab
     FAILED DATA(lt_failed_dyn).
 
-    out->write( lt_failed_dyn ).
+    out->write( it_travel_result ).
 
 
   ENDMETHOD.
